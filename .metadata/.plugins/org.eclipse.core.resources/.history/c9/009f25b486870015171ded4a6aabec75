@@ -1,0 +1,16 @@
+package com.fpg.ec.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+@RequestMapping("hello")
+public class HelloSpringMVC {
+	
+	public String printHello(){
+		
+		return "hello";
+	}
+
+}

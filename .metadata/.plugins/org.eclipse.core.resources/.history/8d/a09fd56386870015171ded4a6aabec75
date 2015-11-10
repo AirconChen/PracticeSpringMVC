@@ -1,0 +1,5 @@
+package com.fpg.ec.controller;
+
+public class HelloSpringMVC {
+
+}

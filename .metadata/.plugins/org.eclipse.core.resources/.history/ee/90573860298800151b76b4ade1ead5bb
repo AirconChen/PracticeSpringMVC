@@ -1,0 +1,24 @@
+package com.fpg.ec.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+@RequestMapping("demo")
+public class HelloSpringMVC {
+	@RequestMapping("edit")
+	public String edit(){
+		return "edit";
+	}
+	
+	
+	@RequestMapping("detail")
+	public String detail(){
+		return "edit";
+	}
+	
+	
+
+}

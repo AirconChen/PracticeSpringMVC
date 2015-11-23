@@ -1,0 +1,25 @@
+package com.fpg.ec.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+@RequestMapping("demo")
+public class HelloSpringMVC {
+	
+	
+	@RequestMapping("edit")
+	public String edit(){
+		return new ModelAndView("edit", "command", new Student());
+	}
+	
+	
+	@RequestMapping("result")
+	public String detail(){
+		return "result";
+	}
+	
+	
+
+}

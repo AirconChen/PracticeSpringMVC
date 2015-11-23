@@ -1,0 +1,28 @@
+package com.fpg.ec.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.fpg.ec.modal.Student;
+
+
+@Controller
+@RequestMapping("demo")
+public class HelloSpringMVC {
+	
+	
+	@RequestMapping("edit")
+	public ModelAndView edit(){
+		return new ModelAndView("edit", "command", new Student());
+	}
+	
+	
+	@RequestMapping("result")
+	public String detail(){
+		return "result";
+	}
+	
+	
+
+}
